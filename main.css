@@ -1,0 +1,41 @@
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.wrapper {
+  display: flex;
+  margin: 100px auto;
+  width: 500px;
+  height: 500px;
+  background-image: url("./images/friends.jpg");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  perspective: 1500px;
+  
+}
+.wrapper__one {
+  width: 250px;
+  height: 500px;
+  border: 1px solid black;
+  background-color: brown;
+  transform-origin: left center;
+  transition: 1s;
+}
+.wrapper__two {
+  width: 250px;
+  height: 500px;
+  border: 1px solid white;
+  background-color: brown;
+  transform-origin: right center;
+  transition: 1s;
+}
+.wrapper:hover .wrapper__one {
+  transform: rotateY(-120deg);
+  transition: 1s;
+}
+.wrapper:hover .wrapper__two {
+  transform: rotateY(120deg);
+  transition: 1s;
+
+}
